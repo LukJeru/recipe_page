@@ -85,8 +85,11 @@ p {
 
 /*list styling*/
  ul {
-  width: 75%;
+  width: 60%;
   padding-inline-start: 1rem;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-top: 1rem;
 }
 
 li span {
@@ -94,6 +97,15 @@ li span {
   left: 1.5rem;
 }
 
-.ingredients li{
+ul li::before {
+  content: "•";
+  display: inline-block;
+  color: var(--h2-heading);
+}
+
+ul li {
+  display: flex;
+  align-items: center;
   margin-top: 1rem;
 }
+
