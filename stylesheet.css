@@ -22,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  height: 100%;
   margin: 0 auto;
   color: var(--text);
   background-color: var(--background);
@@ -85,8 +86,7 @@ p {
 
 /*list styling*/
  ul {
-  width: 60%;
-  padding-inline-start: 1rem;
+  width: 80%;
   list-style-type: none;
   padding-inline-start: 0;
   margin-top: 1rem;
@@ -95,6 +95,7 @@ p {
 li span {
   position: relative;
   left: 1.5rem;
+  text-align: start;
 }
 
 ul li::before {
@@ -109,3 +110,72 @@ ul li {
   margin-top: 1rem;
 }
 
+ol {
+  padding-inline-start: 1rem;
+}
+
+/*instructions*/
+
+.instructions {
+  width: 100%;
+  text-align: start;
+  color: var(--h2-heading); /*set color for heading and numbers of ordered list*/
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--table-lines);
+}
+
+.instructions span {
+  color: var(--text); /*set color of text*/
+}
+
+.instructions li {
+  line-height: 150%;
+  width: 90%;
+  margin-top: .5rem;
+}
+
+/*nutrition*/
+.nutrition {
+  margin-top: 5rem;
+}
+
+.nutrition h2 {
+  margin-bottom: 1.5rem;
+}
+
+.nutrition p {
+  width: 95%;
+  text-align: start;
+  margin-bottom: 1.5rem;
+
+}
+
+/*table*/
+
+table {
+  margin-bottom: 1rem;
+  min-width: 100%;
+}
+
+tr {
+  display: flex;
+  border-bottom: 1px solid var(--table-lines);
+  padding: .75rem;
+}
+
+.last-row {
+  border-bottom: none; /*get rid of border from tr*/
+}
+
+td {
+  text-align: start;
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
